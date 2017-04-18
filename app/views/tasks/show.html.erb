@@ -1,0 +1,7 @@
+<h1><%= @task.name %></h1>
+<p><%= @task.details %></p>
+<% if @task.completed %>
+  <p>Task is done!</p>
+<% end %>
+
+<%= link_to "All Tasks", "/tasks" %>
